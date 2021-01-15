@@ -1,20 +1,10 @@
-<h1>在做了在做了</h1>
-<div class="container">
-  <div class="skills working">1%</div>
-</div>
-<style>
-* {box-sizing: border-box}
-
-.container {
-  width: 100%;
-  background-color: #ddd;
-}
-
-.skills {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 40px;
-  color: white;
-}
-.working {width: 1%; background-color: #4CAF50;}
-</style>
+<ul>
+  <% @comments.each do |comment| %>
+    <li>
+      <a href="#">
+        <h2><%= comment.user.name %>：</h2>
+        <p><%= comment.comment %></p>
+      </a>
+    </li>
+  <% end %>
+</ul>
