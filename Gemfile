@@ -65,3 +65,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'mysql2'
+
+# md to html generator
+gem "rouge"
+gem "redcarpet", "~> 3.2.3", platforms: :ruby
+gem "nokogiri", ">= 1.8.1", "!= 1.11.0"
+gem 'rails-html-sanitizer'

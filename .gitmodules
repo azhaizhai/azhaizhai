@@ -1,0 +1,3 @@
+[submodule "lib/chinese-poetry"]
+	path = lib/chinese-poetry
+	url = https://github.com/chinese-poetry/chinese-poetry.git
