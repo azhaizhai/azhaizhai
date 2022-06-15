@@ -1,0 +1,6 @@
+<div class="heti heti--ancient">
+  <h1><%= @article.title %></h1>
+  <% @paragraphs.each do |p| %>
+    <p class="heti-verse heti-x-large"><%= p.content %></p>
+  <% end %>
+</div>
