@@ -1,66 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>We're sorry, but something went wrong (500)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-  .rails-default-error-page {
-    background-color: #EFEFEF;
-    color: #2E2F30;
-    text-align: center;
-    font-family: arial, sans-serif;
-    margin: 0;
-  }
-
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
-  }
-
-  .rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
-
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
-  }
-
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
-  </style>
-</head>
-
-<body class="rails-default-error-page">
-  <!-- This file lives in public/500.html -->
-  <div class="dialog">
-    <div>
-      <h1>We're sorry, but something went wrong.</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>We're sorry, but something went wrong (500)</title>
+    <style>
+      @media screen and (max-width: 1400px){
+        .mobile-none-show{display: none;}
+        body{background-size: 100%, 100%}
+        .data{margin-top: 60%;}
+      }
+      @media screen and (min-width: 1400px){
+        .data{margin-top:470px;}
+      }
+      body{font-family:Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif !important;margin:0;padding:0;background-image:url('jina.jpg');background-repeat:no-repeat;background-position:top;}
+      .data{text-align:center;font-size:16px;color:#666;}
+          #submenu{display:none;} 
+          #warning{color:#ff0000;} 
+          #main{background:#ddd;border:1px solid #888;display:none;position:relative;} 
+          #main div{border:1px solid #888;font-weight:bold;height:19px;height:21px\9;line-height:18px;cursor:default;position:absolute;text-align:center;width:19px;width:21px\9;} 
+          .hidden{background:url(mine.jpg) 0 0;} 
+          .flag{background:url(mine.jpg) -19px 0;} 
+          .check{background:url(mine.jpg) -38px 0;} 
+          .bomb{background:url(mine.jpg) -57px 0;} 
+          .cbomb{background:url(mine.jpg) -57px 0 #ff0000;} 
+          .wrong{background:url(mine.jpg) -76px 0;} 
+          .num1{color:#0000ff;} 
+          .num2{color:#008000;} 
+          .num3{color:#ff0000;} 
+          .num4{color:#000080;} 
+          .num5{color:#800000;} 
+          .num6{color:#008080;} 
+          .num7{color:#000000;} 
+          .num8{color:#808080;}
+    </style>
+  </head>
+  <body>
+    <div class="data">
+      <h3>500了，请大骂开发，如有必要，可当面battle</h3>
+      <br />
+      <br />
+      <a href="/">返回首页</a>
+      <br />
+      <br />
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
-  </div>
-</body>
+    <a href="http://www.beian.miit.gov.cn" target="_blank" style="color: #999; font-size: 12px; text-align:center; display:block;">陇ICP备18000453号-2</a>
+  </body>
 </html>
