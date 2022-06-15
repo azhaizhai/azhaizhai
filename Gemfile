@@ -48,6 +48,7 @@ group :development do
   gem 'capistrano3-puma'
   gem 'capistrano-sidekiq'
   gem 'capistrano-rvm'
+  gem 'capistrano-git-with-submodules', '~> 2.0'
   #cap 部署需要
   gem "bcrypt_pbkdf", ">= 1.0", "< 2.0"
   gem "ed25519", ">= 1.0", "< 2.0"
