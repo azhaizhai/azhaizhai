@@ -4,6 +4,13 @@ require "capistrano/setup"
 # Include default deployment tasks
 require "capistrano/deploy"
 
+desc "Add Proxy"
+task :proxy do
+  on roles(:all) do
+    excute "export http_proxy=127.0.0.1:7890;export https_proxy=127.0.0.1:7890;export all_proxy=127.0.0.1:7890 && curl ipinfo.io"
+  end
+end
+
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"
@@ -18,6 +25,12 @@ install_plugin Capistrano::SCM::Git
 require "capistrano/scm/git-with-submodules"
 install_plugin Capistrano::SCM::Git::WithSubmodules
 
+desc "Remove Proxy"
+task :unproxy do
+  on roles(:all) do
+    excute "unset http_proxy;unset https_proxy;unset all_proxy && curl ipinfo.io"
+  end
+end
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
