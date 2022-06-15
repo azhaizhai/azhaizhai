@@ -1,0 +1,6 @@
+<div class="heti heti--ancient">
+  <h1><%= @book.title %></h1>
+  <% @articles.each do |article| %>
+    <p><%= link_to article.title, book_article_path(book_id: @book.id, id: article.id) %></p>
+  <% end %>
+</div>
